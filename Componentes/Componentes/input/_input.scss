@@ -1,0 +1,31 @@
+.input{
+    width: 335px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background:white;
+    
+    
+    
+    
+  
+
+    input{
+        
+        height: 48px;
+        width: 325px;
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px/19px;
+        font-weight: bold;
+        text-align: left;
+        font-family: 'Roboto';
+        letter-spacing: 0px;
+
+        opacity:0.5;
+        &:focus{
+            opacity: 1;
+        }
+    }
+}
