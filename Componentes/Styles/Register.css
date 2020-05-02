@@ -1,0 +1,68 @@
+header img {
+  padding-left: 86px;
+  padding-top: 30px;
+}
+
+.picture {
+  padding-left: 111px;
+  margin-top: 64px;
+  padding-bottom: 64px;
+  padding-right: 111.69px;
+}
+
+.formulario {
+  padding-left: 86px;
+  background-color: #fcfcfc;
+}
+
+.formulario p {
+  color: #BAB8CC;
+  font-family: 'roboto';
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+
+.formulario .two {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'roboto';
+  padding-top: 30px;
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #525252;
+  padding: 5% 10%;
+}
+
+.container-register {
+  max-width: 1366px;
+  max-height: 660px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-first {
+  background-color: #f8f8fa;
+}
+
+.container-first .first {
+  max-width: 859px;
+  background-color: #f8f8fa;
+}
+
+.container-second {
+  background-color: #fcfcfc;
+  padding-right: 86px;
+  margin-bottom: -5px;
+}
+/*# sourceMappingURL=Register.css.map */
