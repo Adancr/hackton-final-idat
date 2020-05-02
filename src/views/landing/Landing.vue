@@ -10,15 +10,20 @@
       <div class="lp-image">
         <img src="@/assets/images/laptop-2.png" alt="laptop imagen">
       </div>
-      <button>Regítrate</button>
-      <button>Ingresar</button>
+      <button type="primary">Regítrate</button>
+      <button type="ghost">Ingresar</button>
     </div>
   </div>
 </template>
 
 <script>
+import Button from '@/components/Button.vue';
 export default {
-  name: "Landing"
+  name: 'Landing',
+  components: {
+    Button,
+  },
+
 };
 </script>
 
