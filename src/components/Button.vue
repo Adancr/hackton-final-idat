@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .button {
   padding: 15px 60px;
   border-radius: 25px;
@@ -48,6 +48,11 @@ export default {
   &-ghost {
     background-color: transparent;
     border: 1px solid #fff;
+  }
+
+  &-full {
+    width: 100%;
+    display: block;
   }
 }
 </style>

@@ -1,7 +1,11 @@
 <template>
   <div class="view-landing">
     <div class="container">
-      <img class="logo" src="@/assets/images/logoPachaQTecMobile.webp" alt="logo pachaqtec" />
+      <img
+        class="logo"
+        src="@/assets/images/logoPachaQTecMobile.webp"
+        alt="logo pachaqtec"
+      />
       <h1 class="h1">
         ¡Explota todo tu
         <br />potencial tecnológico!
@@ -110,7 +114,7 @@ export default {
   }
 }
 @media (max-width: 768px) {
-    .logo {
+  .logo {
     width: 190px;
     margin-top: 20px;
     padding-left: 15px;

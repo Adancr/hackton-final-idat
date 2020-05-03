@@ -1,17 +1,11 @@
-.input{
-    width: 335px;
-    height: 50px;
+.input {
+    width: 100%;
+    border: 1px solid #baa8cc;
     border-radius: 5px;
     border: 1px solid black;
-    background:white;
-    
-    
-    
-    
-  
+    background: white;
 
-    input{
-        
+    input {
         height: 48px;
         width: 325px;
         padding-left: 10px;
@@ -20,11 +14,11 @@
         font-size: 14px/19px;
         font-weight: bold;
         text-align: left;
-        font-family: 'Roboto';
+        font-family: "Roboto";
         letter-spacing: 0px;
 
-        opacity:0.5;
-        &:focus{
+        opacity: 0.5;
+        &:focus {
             opacity: 1;
         }
     }
