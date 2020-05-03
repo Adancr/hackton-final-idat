@@ -1,48 +1,53 @@
 <template>
-  <button v-bind:class="classValue" class="button">
+  <button @click="onClick" :class="classValue" class="button">
     <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: 'Buton',
+  name: 'Button',
   props: {
-    type: String
+    type: String,
+    fullWidth: {
+      type: Boolean,
+    },
   },
   computed: {
     classValue() {
-      return this.type == 'primary' ? 'button-primary' : 'button-ghost';
-      // if (this.type == "primary") return "button-primary";
-      // if (this.type == "secondary") return "button-secondary";
-      // if (this.type == "ghost") return "ghost";
+      return {
+        'button-primary': this.type === 'primary',
+        'button-secondary': this.type === 'secondary',
+        'button-ghost': this.type === 'ghost',
+        'button-full': this.fullWidth === true,
+      };
+    },
+  },
+  methods: {
+    onClick() {
+      this.$emit('onclick');
     },
   },
 };
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 .button {
-  width: 200px;
-  height: 50px;
+  padding: 15px 60px;
   border-radius: 25px;
+  background: grey;
+  color: #fff;
   border: none;
-  background: none;
   font-weight: bold;
-  font-family: "Roboto";
   &-primary {
-    width: 335px;
-  height: 50px;
-  border-radius: 25px;
-  border: none;
-  background-color: red;
-  font-weight: bold;
-  font-family: arial;
+    background: #5640ff;
+  }
+  &-secondary {
+    background: #ff1558;
   }
   &-ghost {
-    background-color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
   }
 }
-
-
 </style>
