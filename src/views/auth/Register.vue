@@ -62,6 +62,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import Input from '@/components/Input.vue';
 import Button from '@/components/Button.vue';
 
@@ -73,19 +74,29 @@ export default {
   },
   data() {
     return {
-      name: 'Dafry',
-      age: '30',
-      phone: '929279366',
-      place: 'Lince',
-      especialization: 'Front-end',
+      name: '',
+      age: '',
+      phone: '',
+      place: '',
+      especialization: '',
     };
   },
   methods: {
+    ...mapActions({
+      register: 'authStore/register',
+    }),
     handleSubmit() {
-      console.log('Se envió!!', this.$data);
+      this.register({
+        name: this.name,
+        age: this.age,
+        phone: this.phone,
+        place: this.place,
+        especialization: this.especialization,
+        firstTime: true,
+      });
     },
   },
-};
+}; 
 </script>
 
 <style lang="scss" scoped>
