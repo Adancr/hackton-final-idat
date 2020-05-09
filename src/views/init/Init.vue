@@ -1,11 +1,24 @@
 <template>
   <div class="view-init">
-    <h2>INICIO</h2>
+    <Layout>
+      <Nav></Nav>
+      <Main> </Main>
+    </Layout>
+    <Button>boton</Button>
   </div>
 </template>
 
 <script>
-export default {};
+import Layout from '@/components/Layout.vue';
+import Button from '@/components/Button.vue';
+export default {
+  name: 'Init',
+  components: {
+    Main,
+    Layout,
+    Button,
+  },
+};
 </script>
 
 <style></style>
