@@ -110,21 +110,23 @@ header img {
 }
 
 .picture {
-  padding-left: 111px;
-  margin-top: 64px;
-  padding-bottom: 64px;
+  padding-left: 250px;
+  margin-top: 200px;
+  padding-bottom:180px;
   padding-right: 111.69px;
 }
 
 .formulario {
-  padding-left: 86px;
+  padding-left: 20px;
   background-color: #fcfcfc;
+   width: 400px;
 }
 
 .formulario p {
   color: #bab8cc;
   font-size: 12px;
   padding-bottom: 8px;
+
 }
 
 .formulario .two {
@@ -142,14 +144,12 @@ h1 {
   margin: 0;
 }
 
-body {
-  background-color: #525252;
-  padding: 5% 10%;
+.second{
+  padding-bottom: 15px;
 }
 
 .container-register {
-  max-width: 1366px;
-  max-height: 660px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,16 +157,17 @@ body {
 
 .container-first {
   background-color: #f8f8fa;
+  padding-right: 25%;
+
 }
 
 .container-first .first {
-  max-width: 859px;
+
   background-color: #f8f8fa;
 }
 
 .container-second {
   background-color: #fcfcfc;
-  padding-right: 86px;
-  margin-bottom: -5px;
+  padding-top: 120px;
 }
 </style>
