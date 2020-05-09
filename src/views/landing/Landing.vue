@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .view-landing {
   background-image: url('../../assets/images/bg-degradado-pc.png');
   height: 100vh;

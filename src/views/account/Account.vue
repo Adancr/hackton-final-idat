@@ -1,15 +1,11 @@
 <template>
   <div class="view-account">
-<h2>Account</h2>
+    <h2>Account</h2>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>
