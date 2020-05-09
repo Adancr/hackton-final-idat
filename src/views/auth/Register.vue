@@ -112,21 +112,20 @@ header img {
 .picture {
   padding-left: 250px;
   margin-top: 200px;
-  padding-bottom:180px;
+  padding-bottom: 180px;
   padding-right: 111.69px;
 }
 
 .formulario {
   padding-left: 20px;
   background-color: #fcfcfc;
-   width: 400px;
+  width: 400px;
 }
 
 .formulario p {
   color: #bab8cc;
   font-size: 12px;
   padding-bottom: 8px;
-
 }
 
 .formulario .two {
@@ -144,12 +143,11 @@ h1 {
   margin: 0;
 }
 
-.second{
+.second {
   padding-bottom: 15px;
 }
 
 .container-register {
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,11 +156,9 @@ h1 {
 .container-first {
   background-color: #f8f8fa;
   padding-right: 25%;
-
 }
 
 .container-first .first {
-
   background-color: #f8f8fa;
 }
 

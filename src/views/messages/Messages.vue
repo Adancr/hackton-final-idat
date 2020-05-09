@@ -1,14 +1,18 @@
 <template>
   <div class="view-messages">
-    <h2>Messages</h2>
-    <h2>Messages</h2>
-    <h2>Messages</h2>
-    <h2>Messages</h2>
+    <h1>soy message</h1>
+    <Button>Button</Button>
   </div>
 </template>
 
 <script>
-export default {};
+import Button from '../../components/Button.vue';
+export default {
+  name: 'Messages',
+  components: {
+    Button,
+  },
+};
 </script>
 
 <style></style>

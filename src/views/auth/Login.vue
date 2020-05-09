@@ -35,6 +35,7 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex';
 import Input from '@/components/Input.vue';
 import Button from '@/components/Button.vue';
 
@@ -43,6 +44,40 @@ export default {
   components: {
     Input,
     Button,
+  },
+  data() {
+    return {
+      username: '',
+      password: '',
+    };
+  },
+  watch: {
+    isLogin(value) {
+      if (value) {
+        /* eslint-disable */
+        alert('Bienvenido pase usted');
+        this.$router.replace('/');
+      } else {
+        /* eslint-disable */
+        alert('Usuario no encontrado!!');
+      }
+    },
+  },
+  computed: {
+    ...mapState({
+      isLogin: (state) => state.authStore.isLogin,
+    }),
+  },
+  methods: {
+    ...mapActions({
+      login: 'authStore/login',
+    }),
+    handleSubmit() {
+      this.login({
+        username: this.username,
+        password: this.password,
+      });
+    },
   },
 };
 </script>
@@ -56,21 +91,20 @@ header img {
 .picture {
   padding-left: 250px;
   margin-top: 200px;
-  padding-bottom:180px;
+  padding-bottom: 180px;
   padding-right: 111.69px;
 }
 
 .formulario {
   padding-left: 20px;
   background-color: #fcfcfc;
-   width: 400px;
+  width: 400px;
 }
 
 .formulario p {
   color: #bab8cc;
   font-size: 12px;
   padding-bottom: 8px;
-
 }
 
 .formulario .two {
@@ -88,12 +122,11 @@ h1 {
   margin: 0;
 }
 
-.second{
+.second {
   padding-bottom: 15px;
 }
 
 .container-register {
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,11 +135,9 @@ h1 {
 .container-first {
   background-color: #f8f8fa;
   padding-right: 25%;
-
 }
 
 .container-first .first {
-
   background-color: #f8f8fa;
 }
 

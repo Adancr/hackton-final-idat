@@ -18,7 +18,7 @@ const ACTIONS = {
       .then((response) => response.json())
       .then((users) => {
         /* eslint-disable */
-        const user = users.find( 
+        const user = users.find(
           (user) => user.username === payload.username && user.password === payload.password
         );
         if (user) {

@@ -26,7 +26,7 @@ const routes = [
 
     children: [
       {
-        path: '/home',
+        path: '/',
         name: 'Init',
         component: () => import('../views/init/Init.vue'),
       },

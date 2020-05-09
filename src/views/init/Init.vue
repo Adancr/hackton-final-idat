@@ -1,10 +1,8 @@
 <template>
   <div class="view-init">
-    <Layout>
-      <Nav></Nav>
-      <Main> </Main>
-    </Layout>
-    <Button>boton</Button>
+    <h1>soy Inicio</h1>
+    <Main> </Main>
+    <Button>Button</Button>
   </div>
 </template>
 
@@ -21,4 +19,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+h1 {
+  color: red;
+}
+</style>
