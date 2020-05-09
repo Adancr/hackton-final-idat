@@ -6,6 +6,7 @@
       @input="updateInput"
       :type="type"
       :placeholder="placeholder"
+      :required="required"
       class="input"
     />
   </div>
@@ -21,6 +22,9 @@ export default {
     type: {
       type: String,
       default: 'text',
+    },
+    required: {
+      type: Boolean,
     },
   },
   data() {
@@ -56,6 +60,9 @@ label {
   &:focus {
     opacity: 1;
     outline: none;
+  }
+  &:focus::invalid {
+    border-color: red;
   }
 }
 </style>

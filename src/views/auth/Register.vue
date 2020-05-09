@@ -27,12 +27,14 @@
               :value="name"
               label="Nomgre y Appellido"
               placeholder="Escribe aqui..."
+              required
             />
             <Input
               @input="(value) => (age = value)"
               :value="age"
               label="Edad"
               placeholder="Escribe aqui..."
+              required
             />
 
             <Input
@@ -40,6 +42,7 @@
               :value="phone"
               label="Celular"
               placeholder="Escribe aqui..."
+              required
             />
             <Input
               @input="(value) => (place = value)"
@@ -52,6 +55,7 @@
               :value="especialization"
               label="Programa de Especialización"
               placeholder="Escribe aqui..."
+              required
             />
             <Button :fullWidth="true" type="primary">Registrar</Button>
           </form>
@@ -96,7 +100,7 @@ export default {
       });
     },
   },
-}; 
+};
 </script>
 
 <style lang="scss" scoped>
