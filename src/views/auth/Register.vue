@@ -170,4 +170,91 @@ h1 {
   background-color: #fcfcfc;
   padding-top: 120px;
 }
+
+/* Responsive */
+@media (max-width:1024px  ) {
+
+  header img {
+  padding-left: 40%;
+  padding-top: 30px;
+  height: 100px;
+}
+
+.container-register {
+
+display: inline;
+align-content: center;
+}
+
+.formulario {
+
+  background-color: #fcfcfc;
+   width: 100%;
+  padding:  0 20%;
+}
+.container-second {
+  background-color: #fcfcfc;
+  padding-top: 50px;
+}
+ .picture {
+  display: none;
+}
+}
+@media (max-width: 768px) {
+
+ header img {
+  padding-left: 30%;
+  padding-top: 30px;
+  height: 100px;
+}
+
+.container-register {
+display: block;
+
+}
+
+.formulario {
+
+  background-color: #fcfcfc;
+  width: 100%;
+  padding:  0 20%;
+
+}
+
+.container-second {
+  background-color: #fcfcfc;
+  padding-top: 50px;
+}
+ .picture {
+  display: none;
+}
+}
+@media (max-width: 576px) {
+header img {
+  padding-left: 25%;
+  padding-top: 30px;
+  height: 100px;
+}
+
+.container-register {
+display: block;
+
+}
+
+.formulario {
+
+  background-color: #fcfcfc;
+  width: 100%;
+  padding:  0 20%;
+
+}
+.container-second {
+  background-color: #fcfcfc;
+  padding-top: 50px;
+}
+
+ .picture {
+  display: none;
+}
+}
 </style>
