@@ -4,9 +4,7 @@
       <Nav> </Nav>
     </div>
     <div class="main">
-      <Main>
-        <router-view></router-view>
-      </Main>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -14,14 +12,14 @@
 <script>
 import Nav from './Nav.vue';
 import Main from './Main.vue';
-import Button from './Button.vue';
+// import Button from './Button.vue';
 
 export default {
   name: 'Layout',
   components: {
     Nav,
     Main,
-    Button,
+    //  Button,
   },
 };
 </script>

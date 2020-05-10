@@ -15,8 +15,12 @@
         <img src="@/assets/images/laptop-2.png" alt="laptop imagen" />
       </div>
       <div class="wrap-button">
-        <Button type="secondary">Regítrate</Button>
-        <Button type="ghost">Ingresar</Button>
+        <router-link :to="{ name: 'Register' }">
+          <Button type="secondary">Regítrate</Button>
+        </router-link>
+        <router-link :to="{ name: 'Login' }">
+          <Button type="ghost">Ingresar</Button>
+        </router-link>
       </div>
     </div>
   </div>

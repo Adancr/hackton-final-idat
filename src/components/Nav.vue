@@ -4,13 +4,19 @@
       <img class="logo-pqtec" src="../assets/images/logo_pqtec.jpg" alt="" />
       <div class="wrap-items">
         <div class="box-init">
-          <div class="init">Inicio</div>
+          <router-link :to="{ name: 'Init' }">
+            <div class="init">Inicio</div>
+          </router-link>
         </div>
         <div class="box-message">
-          <div class="message">Mensajes</div>
+          <router-link :to="{ name: 'Messages' }">
+            <div class="message">Mensajes</div>
+          </router-link>
         </div>
         <div class="box-account">
-          <div class="account">Mi cuenta</div>
+          <router-link :to="{ name: 'Account' }">
+            <div class="account">Mi cuenta</div>
+          </router-link>
         </div>
       </div>
     </div>
