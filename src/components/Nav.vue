@@ -44,6 +44,8 @@ export default {
   align-items: space-around;
   align-items: center;
   color: #bab8cc;
+  
+
 
   .wrap {
     font-size: 1.8rem;
@@ -62,6 +64,7 @@ export default {
       position: relative;
       display: flex;
       align-items: center;
+
       &::before {
         content: url('../assets/images/icon_init.svg');
         margin-right: 10px;
