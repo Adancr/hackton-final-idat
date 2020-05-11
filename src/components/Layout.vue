@@ -33,6 +33,7 @@ export default {
     width: 20%;
     background-color: #5640ff;
     padding: 30px 15px;
+    
   }
   .main {
     width: 80%;

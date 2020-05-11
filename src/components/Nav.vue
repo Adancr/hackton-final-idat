@@ -5,17 +5,17 @@
       <div class="wrap-items">
         <div class="box-init">
           <router-link :to="{ name: 'Init' }">
-            <div class="init">Inicio</div>
+            <div class="init"><h1>Inicio</h1></div>
           </router-link>
         </div>
         <div class="box-message">
           <router-link :to="{ name: 'Messages' }">
-            <div class="message">Mensajes</div>
+            <div class="message"><h1>Mensajes</h1></div>
           </router-link>
         </div>
         <div class="box-account">
           <router-link :to="{ name: 'Account' }">
-            <div class="account">Mi cuenta</div>
+            <div class="account"><h1>Mi cuenta</h1></div>
           </router-link>
         </div>
       </div>
@@ -49,6 +49,11 @@ export default {
     font-size: 1.8rem;
     font-weight: 600;
     margin-top: 30px;
+
+    h1 {
+      font-size: 20px;
+      text-decoration: none;
+    }
 
     &-items {
       margin-top: 40px;
