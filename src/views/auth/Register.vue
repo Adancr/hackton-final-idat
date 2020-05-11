@@ -4,7 +4,9 @@
       <div class="container-first">
         <header>
           <div class="first">
-            <img src="@/assets/images/Pacha logo.png" alt="logo pachaqtec" />
+            <router-link :to="{ name: 'Landing' }">
+              <img src="@/assets/images/Pacha logo.png" alt="logo pachaqtec" />
+            </router-link>
           </div>
         </header>
         <main>
@@ -168,89 +170,79 @@ h1 {
 }
 
 /* Responsive */
-@media (max-width:1024px  ) {
-
+@media (max-width: 1024px) {
   header img {
-  padding-left: 40%;
-  padding-top: 30px;
-  height: 100px;
-}
+    padding-left: 40%;
+    padding-top: 30px;
+    height: 100px;
+  }
 
-.container-register {
+  .container-register {
+    display: inline;
+    align-content: center;
+  }
 
-display: inline;
-align-content: center;
-}
-
-.formulario {
-
-  background-color: #fcfcfc;
-   width: 100%;
-  padding:  0 20%;
-}
-.container-second {
-  background-color: #fcfcfc;
-  padding-top: 50px;
-}
- .picture {
-  display: none;
-}
+  .formulario {
+    background-color: #fcfcfc;
+    width: 100%;
+    padding: 0 20%;
+  }
+  .container-second {
+    background-color: #fcfcfc;
+    padding-top: 50px;
+  }
+  .picture {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
+  header img {
+    padding-left: 30%;
+    padding-top: 30px;
+    height: 100px;
+  }
 
- header img {
-  padding-left: 30%;
-  padding-top: 30px;
-  height: 100px;
-}
+  .container-register {
+    display: block;
+  }
 
-.container-register {
-display: block;
+  .formulario {
+    background-color: #fcfcfc;
+    width: 100%;
+    padding: 0 20%;
+  }
 
-}
-
-.formulario {
-
-  background-color: #fcfcfc;
-  width: 100%;
-  padding:  0 20%;
-
-}
-
-.container-second {
-  background-color: #fcfcfc;
-  padding-top: 50px;
-}
- .picture {
-  display: none;
-}
+  .container-second {
+    background-color: #fcfcfc;
+    padding-top: 50px;
+  }
+  .picture {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
-header img {
-  padding-left: 25%;
-  padding-top: 30px;
-  height: 100px;
-}
+  header img {
+    padding-left: 25%;
+    padding-top: 30px;
+    height: 100px;
+  }
 
-.container-register {
-display: block;
+  .container-register {
+    display: block;
+  }
 
-}
+  .formulario {
+    background-color: #fcfcfc;
+    width: 100%;
+    padding: 0 20%;
+  }
+  .container-second {
+    background-color: #fcfcfc;
+    padding-top: 50px;
+  }
 
-.formulario {
-
-  background-color: #fcfcfc;
-  width: 100%;
-  padding:  0 20%;
-
-}
-.container-second {
-  background-color: #fcfcfc;
-  padding-top: 50px;
-}
-
- .picture {
-  display: none;
-}
+  .picture {
+    display: none;
+  }
 }
 </style>

@@ -44,13 +44,11 @@ export default {
   align-items: space-around;
   align-items: center;
   color: #bab8cc;
-  
-
 
   .wrap {
     font-size: 1.8rem;
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 30px;
 
     &-items {
       margin-top: 40px;
@@ -64,6 +62,11 @@ export default {
       position: relative;
       display: flex;
       align-items: center;
+      a {
+        font-size: 1.6rem;
+        color: white;
+        text-decoration: none;
+      }
 
       &::before {
         content: url('../assets/images/icon_init.svg');
@@ -75,6 +78,11 @@ export default {
       position: relative;
       display: flex;
       align-items: center;
+      a {
+        font-size: 1.6rem;
+        color: #bab8cc;
+        text-decoration: none;
+      }
       &::before {
         content: url('../assets/images/icon_message.svg');
         margin-right: 10px;
@@ -85,6 +93,11 @@ export default {
       position: relative;
       display: flex;
       align-items: center;
+      a {
+        font-size: 1.6rem;
+        color: #bab8cc;
+        text-decoration: none;
+      }
       &::before {
         content: url('../assets/images/icon_account.svg');
         margin-right: 10px;
